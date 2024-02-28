@@ -7,6 +7,7 @@ import {ServeStaticModule} from "@nestjs/serve-static";
 import {FunctionsModule} from "./functions/functions.module";
 import * as path from "path";
 import {SeoPagesModule} from "./seo-pages/seo-pages.module";
+import { LeadsModule } from './leads/leads.module';
 
 @Module({
   imports: [
@@ -30,7 +31,8 @@ import {SeoPagesModule} from "./seo-pages/seo-pages.module";
       synchronize: true,
     }),
     SeoPagesModule,
-    FunctionsModule
+    FunctionsModule,
+    LeadsModule
   ],
 
 })

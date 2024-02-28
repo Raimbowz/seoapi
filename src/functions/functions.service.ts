@@ -250,7 +250,7 @@ export class FunctionsService {
         return data;
     }
 
-    async postRequest({httpService, endpoint, url, headers, options}):Promise<any>{
+    async postRequest({httpService,endpoint, url, headers, options}):Promise<any>{
 
         if(options.accessToken){
             headers.headers.Authorization = options.accessToken;
